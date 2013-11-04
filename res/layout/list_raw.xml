@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/list_selector"
+                android:orientation="vertical"
+                android:padding="5dip" >
+
+    <!-- 显示一张图-->
+        <ImageView
+                android:id="@+id/list_image"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rihanna"
+                android:layout_gravity="bottom|left|top"/>
+
+    <!-- 图片的描述信息，或者是位置说明信息-->
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="Just gona stand there and ..."
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="15dip"
+            android:textStyle="bold"/>
+
+    <!-- 最后回复内容（可以考虑放最新的三条回复） -->
+    <TextView
+            android:id="@+id/artist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:textColor="#343434"
+            android:textSize="10dip"
+            android:layout_marginTop="1dip"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="Just gona stand there and ..." />
+
+    <!-- 总回复数-->
+    <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/title"
+            android:gravity="right"
+            android:text="5:45"
+            android:layout_marginRight="5dip"
+            android:textSize="10dip"
+            android:textColor="#10bcc9"
+            android:textStyle="bold"/>
+
+    <!-- 进入详细内容页 -->
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/arrow"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"/>
+
+</LinearLayout>
